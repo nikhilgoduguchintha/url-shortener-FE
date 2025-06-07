@@ -1,0 +1,93 @@
+/* src/components/URLShortenForm.css */
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input:focus {
+  border-color: #3b82f6;
+}
+
+.submit-button {
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  background-color: #1e40af;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.submit-button:hover {
+  background-color: #1d4ed8;
+}
+
+.result-container {
+  margin-top: 1rem;
+}
+
+.short-url-box {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #f4f6f8;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  border-left: 4px solid #007bff;
+}
+
+.short-url-label {
+  color: #333;
+}
+
+.short-url-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+  word-break: break-word;
+  transition: text-decoration 0.2s;
+}
+
+.short-url-link:hover {
+  text-decoration: underline;
+}
+
+.copy-button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.copy-button:hover {
+  background-color: #0056b3;
+}
+
+.copy-button.copied {
+  background-color: #28a745;
+}
+
+.error {
+  color: #dc2626;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
